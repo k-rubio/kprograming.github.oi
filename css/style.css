@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	background-color:rgb(  41, 71, 108 ); 
+	height: 80px; /*pdemos estandarizar el tamaño del banner a 89px pero no es una regla general*/
+	position:fixed;/* fixed nos ayuda a que la barra quede fija al momento de hace scroll*/
+    width: 100%;
+    top:0;/*con esta posicion dejamos la barra fija en la parte superior de la pantalla */
+    left:0; /*con esta posicion dejamos la barra fija desde el lado izquierdo*/
+}
+.nav{
+	display: flex; /* vamos a acomodar el logo a la izquierda y las opciones a la derecha 
+	para esta colocamos un display flex para utilizar la opcion justify-content:space-between*/
+    justify-content: space-between;
+    max-width: 1500px;/*esta propiedad la agregamos para que en pantallas grandes se mantanga el ancho de la informacion en este caso 992px;*/
+    margin: 0 auto ;
+}
+.logo{
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 80px; /*con esta opcion colocamos centrado el logo en forma vertical*/
+	padding: 0 40px;
+}
+
+.nav-menu{
+	display: flex;/*esat ves utilizariamos display flex para colocar el menu de foma vertical, esto lo ara de forma automatica*/
+	margin: right;
+	list-style: none;/*esta opcion elimina los puntos al comienzo de la lista*/
+	text-decoration: none;
+}
+
+.nav-menu-link{
+	border-radius:40px;
+	color: white;
+	text-decoration: none;
+	padding: 8px 12px;
+}
+.nav-menu-item{
+	font-size: 18px;
+	margin: 0 10px; /*margen de arriba a bajo 0 y de izquierdo y derecha 10px*/
+	line-height: 80px;/*ubicamos todo en el centro de fomra lateral*/
+	text-transform: uppercase; /*coloca el texto en mayuscula*/
+	width: max-content; /*esta opcion evita que al colocar pantallas mas pequeñas corte el texto*/
+
+
+}
+.nav-menu-link:hover{
+	background-color: rgb(  17, 23, 38  );
+}
+
+/*HASTA ESTE PUENTO YA TENEMOS EL BANNER PARA ECRITORIO SOLO ARIA FALTA MODIFICAR LAS PROPIEDADES A GUSTO*/
+
+.nav-toggle{/*el icono esta dentro del boton en el html a qui quitamoa agunas propiedades el button y mejoramos el font o el icono*/
+	color: white;
+	background:none;
+	border:none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.header{
+		height: 60px;
+	}
+	.logo{
+		line-height: 60px;
+		padding: 0 20px;
+	}
+	.nav-menu{
+	background-color:rgb(50, 80, 120);	
+	flex-direction: column;/*esat ves utilizariamos display flex para colocar el menu de foma vertical, esto lo ara de forma automatica*/
+	margin-right:20px;
+	position: fixed;
+	left: 100%;
+	top :60px;
+	width: 100%;
+	align-items: center;
+	height: calc( 100% - 60px );
+	overflow-y:auto;
+	transition: left 0,3s;
+	}
+	.nav-toggle{/*el icono esta dentro del boton en el html a qui quitamoa agunas propiedades el button y mejoramos el font o el icono*/
+	display: block; 	
+	}
+	.nav-menu_visible{ /*esta es la propiedad que controlamos con el js*/
+		left: 0;
+	}
+}
