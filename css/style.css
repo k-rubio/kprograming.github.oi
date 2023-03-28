@@ -1,4 +1,5 @@
 *{
+
 	margin: 0;
 	padding: 0;
 }
@@ -52,6 +53,34 @@
 	background-color: rgb(  17, 23, 38  );
 }
 
+
+.container-main {
+	text-align: center;
+	padding: 20px;
+	background-color: rgb(17, 23, 38 );	
+	display: flex;
+	width: 60%;
+	align-items: center;
+	height: 95vh;
+	margin: 0 auto;	
+}
+
+.main p{
+	text-align: justify;
+	color:white;
+}
+
+.cantainer-footer{
+	bottom:0;
+	position:fixed;
+	width: 100%;
+	height: 80px;
+	background-color:rgb(  41, 71, 108 );
+}
+.kevin{
+ 	margin: 30px;
+	width: 50%;
+}
 /*HASTA ESTE PUENTO YA TENEMOS EL BANNER PARA ECRITORIO SOLO ARIA FALTA MODIFICAR LAS PROPIEDADES A GUSTO*/
 
 .nav-toggle{/*el icono esta dentro del boton en el html a qui quitamoa agunas propiedades el button y mejoramos el font o el icono*/
@@ -63,6 +92,8 @@
 	line-height: 60px;
 	display: none;
 }
+
+
 
 @media only screen and (max-width: 768px) {
 	.header{
