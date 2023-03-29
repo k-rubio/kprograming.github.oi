@@ -1,6 +1,7 @@
 *{
 
 	margin: 0;
+	margin-bottom: 0;
 	padding: 0;
 }
 .header{
@@ -55,14 +56,14 @@
 
 
 .container-main {
+
 	text-align: center;
 	padding: 20px;
 	background-color: rgb(17, 23, 38 );	
 	display: flex;
 	width: 60%;
 	align-items: center;
-	height: 95vh;
-	margin: 0 auto;	
+	margin: 100px auto 10px;	
 }
 
 .main p{
@@ -79,7 +80,7 @@
 }
 .kevin{
  	margin: 30px;
-	width: 50%;
+	width: 30%;
 }
 /*HASTA ESTE PUENTO YA TENEMOS EL BANNER PARA ECRITORIO SOLO ARIA FALTA MODIFICAR LAS PROPIEDADES A GUSTO*/
 
@@ -122,4 +123,23 @@
 	.nav-menu_visible{ /*esta es la propiedad que controlamos con el js*/
 		left: 0;
 	}
+	.container-main {
+	text-align: center;
+	padding: 50px;
+	background-color: rgb(17, 23, 38 );	
+	display: flex;
+	width: 80%;
+	align-items: center;
+	margin: 100px auto 10px;	
+ 	}
+
+ 	.main p{
+	text-align: justify;
+	color:white;
+	}
+	.kevin{
+	border-radius: 50%;
+ 	margin: 2x0px;
+	width: 50%;
+}
 }
