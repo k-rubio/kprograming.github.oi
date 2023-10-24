@@ -45,6 +45,10 @@ h1{
 	background-color: #1b1b32;
 	color: white;
 }
+.seccion-clara{
+	color: black;
+	background-color: white;
+}
 .sobre-mi {
 	 height: 600px;
 	 padding: 10px;
@@ -85,13 +89,13 @@ padding: 50px 40px 70px 40px;
 	padding: 40px;
 
 }
-.texto-negro{
+.texto-negro {
 	color: black;
 }
 .texto-blanco{
 	color: white;
 }
-.seccion-descripcion{
+.seccion-descripcion {
 	font-size: 1.2rem;
 	color: #584e4e;
 }
@@ -130,6 +134,14 @@ padding: 50px 40px 70px 40px;
 }
 .proyecto:hover .overlay{
 	opacity: 1;
+}
+.overlay .iconos-contenedor {
+	display:flex;
+}
+.overlay i{
+	color: black;
+	font-size:60px;
+	margin: 10px; 
 }
 @media screen and (max-width: 767px){
 
